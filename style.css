@@ -1,0 +1,229 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    background: url('bell1.jpg');
+    background-size:contain;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 33px;
+    top: 12px;
+}
+
+.left div {
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    color: rgb(255, 196, 0);
+}
+
+.left img {
+    width: 80px;
+    display: flex;
+    cursor: pointer;
+}
+
+.mid {
+    display: block;
+    width: 53%;
+    margin: 12px auto;
+    /* border: 2px solid blue; */
+}
+
+.right {
+    position: absolute;
+    right: 33px;
+    /* border: 2px solid green; */
+    display: inline-block;
+    bottom: 20px;
+
+}
+
+.right button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 19px;
+}
+
+.navbar li a {
+    color: cornsilk;
+    text-decoration: none;
+    padding: 34px;
+
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: rgb(255, 188, 4);
+}
+
+.btn {
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 4px 14px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.btn:hover {
+    background-color: rgb(247, 159, 7);
+}
+
+.container {
+    border: 1px solid rgb(255, 254, 251);
+    margin: 87px 173px;
+    padding: 40px 66px;
+    width: 550px;
+    border-radius: 70px;
+}
+
+.container h1 {
+    text-align: center;
+    color: rgb(255, 196, 0);
+    font-family: 'Scheherazade New', serif;
+}
+
+#container-button {
+    display: block;
+    width: 74%;
+    margin: 13px auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.form-group input {
+    font-family: 'Baloo Bhai 2';
+    font-family: 'Scheherazade New', serif;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: 485px;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 5px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.active {
+    background-color: black;
+    text-align: center;
+    margin: 0px;
+    padding: 8px;
+}
+
+.active h1 {
+    font-size: 60px;
+    font-family: cursive;
+}
+
+.active hr {
+    width: 600px;
+    opacity: 0.5;
+}
+
+.active p {
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+}
+
+.image {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.image1 img {
+    height: 300px;
+    width: 400px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.image1 {
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 7px;
+    margin: 10px auto;
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #ffd000);
+    opacity: 0;
+    transition: 1s;
+}
+
+.image1:hover .overlay {
+    opacity: 1;
+
+}
+
+.desc {
+    width: 80%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+.desc p {
+    font-size: 14px;
+}
+
+.image1 hr {
+    height: 2px;
+    width: 200px;
+    background: white;
+    border: 0px;
+    margin: 15px auto;
+}
+
+.image1:hover .desc {
+    bottom: 40%;
+    opacity: 1;
+}
